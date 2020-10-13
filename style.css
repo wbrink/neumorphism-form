@@ -51,12 +51,11 @@ body {
   /* align-items: center; */
   /* justify-content: center; */
   background-color: var(--main-bg-color);
-  box-shadow: 3px 3px 10px var(--main-bg-inset-dark), -3px -3px 10px var(--main-bg-inset-light);
+  box-shadow: 3px 3px 10px var(--main-bg-inset-dark), -2px -2px 7px var(--main-bg-inset-light);
   border-radius: 10px;
   background-image: linear-gradient(to right,rgb(46, 46, 53), rgb(51,56,63));
   padding: 15px 20px;
   margin-bottom: 50px;
-  
 }
 
 span {
@@ -131,10 +130,10 @@ h4 {
 }
 
 .scrabble {
+  padding: 10px;
   width: auto;
   opacity: 1;
   transition: all 300ms ease;
-  overflow: visible;
   overflow-y: auto;
 }
 
@@ -142,6 +141,8 @@ h4 {
   opacity: 1;
   transition: all 300ms ease;
   overflow-y: auto;
+  /* this is to make space for the box shadow */
+  padding: 10px;
 }
 
 .form-group {
@@ -184,7 +185,7 @@ h4 {
 }
 
 .non-active-nav {
-  box-shadow: 3px 3px 10px  rgb(29, 29, 31), -3px -3px 10px  rgb(63, 65, 66);
+  box-shadow: 3px 3px 10px  rgb(29, 29, 31), -2px -2px 6px  rgb(63, 65, 66);
 }
 
 .active-nav {
