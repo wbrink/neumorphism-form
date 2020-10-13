@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1 -->
+  <h1>An Arbitrary Way To Financial Freedom and Independence</h1>
+
+  <!-- 2 -->
+  <div class="scrabble">
+    <div>
+      <h4>Inputs</h4>
+      <form action="" class="section form" id="form">
+        <div class="form-group">
+          <input type="text" name="team1" placeholder="Team 1" id="team1Input" maxlength="50" minlength="1">
+        </div>
+        <div class="form-group">
+          <input type="text" name="team2" placeholder="Team 2" id="team2Input" maxlength="50">
+        </div>
+        <div class="form-group">
+          <input type="number" name="team2" placeholder="Spread" id="spread" max="100" min="-100">
+        </div>
+        
+        
+        <button class="btn" type="submit" id="submitButton">SUBMIT</button>
+      </form>
+    </div>
+    
+
+
+    <h4>Results</h4>
+    <div class="section results">
+      <p class="result">Team 1: <span id="team1Score"></span></p>
+      <p class="result">Team 2: <span id="team2Score"></span></p>
+      <p class="result">Spread: <span id="spreadResult"></span></p>
+      <p class="result">Winner: <span id="winner"></span></p>
+      <p class="result">Rankings: <span id="rankings"></span></p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div id="randomSection" class="hide">
+    <div>
+      <h4>Random Integer</h4>
+      <form action="" class="section form" id="form">
+        <div class="form-group">
+          <label for="startingNumber">Start</label>
+          <input type="text" name="team1" placeholder="Starting Number" value="0" id="startingNumber" maxlength="100000000" minlength="-100000000">
+        </div>
+
+        <div class="form-group">
+          <label for="endingNumber">End</label>
+          <input type="text" name="team2" placeholder="Ending Number" value="1" id="endingNumber" maxlength="100000000" minlength="-100000000">
+        </div>
+        
+        
+        <button type="submit" class="btn" id="generateRandomIntButton">Generate</button>
+      </form>
+    </div>
+
+
+    <h4>Results</h4>
+    <div class="section results">
+      <p class="result">Random Integer: <span id="randIntResult"></span></p>
+      <p class="result">Rankings: <span id="rankings2"></span></p>
+    </div>
+  </div>
+  
+
+  <!-- 4 -->
+  <div class="bottom-nav">
+    <ul>
+      <li class="active-nav" id="scrabbleNav">Scrabble</li>
+      <li class="non-active-nav" id="randomNav">Random</li>
+    </ul>
+  </div>
+
+
+  <!-- when document loads give me a random array of 1 through 16 with no repeats -->
+  <script src="app.js"></script>
+</body>
+</html>
